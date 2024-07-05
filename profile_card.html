@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: #9CDBA6;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-img {
+            border: 5px solid #50B498; /* Green border around image */
+            border-radius: 50%; /* Make image circular */
+
+        }
+
+        .card {
+            border: none;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .card:hover::after {
+            transform: scaleY(1);
+        }
+
+        .fonts {
+            font-size: 15px;
+        }
+
+        .social-list {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 1px;
+        }
+
+        .social-list li {
+            padding: 10px;
+            color: #50B498;
+            font-size: 25px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 15px
+        }
+
+        .contact-info span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    </style>
+    
+    <title>Profile Card</title>
+</head>
+<body>
+    <div class="card p-3 py-4">
+        <div class="text-center">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" width="100" class="rounded-circle profile-img" alt="Profile Picture">
+        </div>
+        <div class="text-center mt-3">
+            <h5 class="mt-2 mb-2">Abdur Rahman</h5>
+            <span>Software Engineer</span>
+            <div class="px-4 mt-2">
+                <p class="fonts">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus itaque iure cumque esse repellendus. Magnam voluptatum commodi asperiores sunt inventore mollitia exercitationem, placeat incidunt dolor ipsa atque suscipit itaque praesentium.</p>
+            </div>
+            <ul class="social-list">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-github"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> Rahman527386@gmail.com</span>
+                <span><i class="fas fa-phone"></i> 01866845599</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
